@@ -4,7 +4,7 @@ export default function Login({ setToken, setIsUser }) {
   const handleLogin = ({ email, password}) => {
     //post request to api/users
     // fetch('http://localhost:3030/users', {
-    fetch('https://three-do-api-web-je.app/users', {
+    fetch('https://three-do-api-je.web.app/users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ export default function Login({ setToken, setIsUser }) {
     //setToken
   }
   return (
-    <Modal title="Create Account" visible closable={false} footer={null}>
+    <Modal title="Login" visible closable={false} footer={null}>
       <Form onFinish={handleLogin} labelCol={{ span: 8 }} wrapperCol={{ span: 16 }}>
         <Form.Item label="Email" name="email">
           <Input />

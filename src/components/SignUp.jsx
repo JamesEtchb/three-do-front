@@ -4,7 +4,7 @@ export default function SignUp({ setToken, setIsUser }) {
   const handleSignUp = ({ email, password}) => {
     //post request to api/users
     // fetch('http://localhost:3030/users', {
-    fetch('https://three-do-api-web.app/users', {
+    fetch('https://three-do-api-je.web.app/users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

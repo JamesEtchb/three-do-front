@@ -5,7 +5,7 @@ export default function TodoListCard({ token, item, setError, setTasklist, setLo
         //make a patch request to api
         const body = { done: !item.done }
         // fetch(`http://localhost:3030/tasks/${item.id}`, {
-        fetch(`https://three-do-api-web.app/tasks/${item.id}`, {
+        fetch(`https://three-do-api-je.web.app/tasks/${item.id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

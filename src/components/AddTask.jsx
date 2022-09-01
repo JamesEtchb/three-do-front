@@ -5,7 +5,7 @@ const { Search } = Input
 export default function AddTask({ setTasklist, token }) {
   const [task, setTask] = useState('')
   const addTask = () => {
-    fetch('https://three-do-api-je.web.app/tasks', {
+    fetch('https://three-do-api-je.web.apptasks', {
     // fetch('http://localhost:3030/tasks', {
       method: 'POST',
       headers: {
